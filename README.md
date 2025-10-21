@@ -22,6 +22,6 @@ A modern remake of the classic **Pong** built using **Python** and **Pygame**.
 ✅ Removed AI and made both paddles player-controlled  
 ✅ Added custom art and sound effects  
 ✅ Added scoring system  
-✅ (Optional: Add “Game Over” screen / restart feature — if you did, keep this line)
+✅ Added a starting screen
 
 ---
