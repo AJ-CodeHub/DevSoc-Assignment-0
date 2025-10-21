@@ -1,4 +1,4 @@
-import pygame, sys, random
+import pygame, sys, random, math
 
 pygame.init()
 pygame.display.set_mode()
@@ -19,7 +19,7 @@ ball_pic = pygame.transform.scale(ball_pic, (40, 40))
 
 player_score = 0
 opponent_score = 0
-game_font = pygame.font.Font(None, 74)
+game_font = pygame.font.Font("Retro.ttf", 30)
 
 
 
@@ -87,13 +87,14 @@ def draw_dashed_line(surface, color, start_pos, end_pos, width=6, dash_length=20
 def start_screen():
     screen.blit(bg_start, (0, 0))
 
-    # title_text = game_font.render("PONG", True, (255, 255, 255))
-    # prompt_text = game_font.render("Press SPACE to start", True, (200, 200, 200))
+    time_now = pygame.time.get_ticks() / 500  # controls speed of pulse
+    pulse = (math.sin(time_now) + 1) / 2      # oscillates between 0 → 1
+    brightness = int(100 + 105 * pulse)       # range: 150–255
 
-    # screen.blit(title_text, (screen_width/2 - title_text.get_width()/2, screen_height/2 - 100))
-    # screen.blit(prompt_text, (screen_width/2 - prompt_text.get_width()/2, screen_height/2 + 50))
+    prompt_color = (brightness, brightness, brightness)
+    prompt_text = game_font.render("Press 'SPACE' to start", True, prompt_color)
 
-
+    screen.blit(prompt_text, (screen_width/2 - prompt_text.get_width()/2, screen_height/2 + 200))
 
 # General setup
 pygame.init()
