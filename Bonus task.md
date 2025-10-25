@@ -1,6 +1,6 @@
-# 💡 Bonus Task – Solving a Daily Annoyance
+# Bonus Task – Solving a Daily Annoyance
 
-## 😩 Problem
+## Problem
 Students often **lose small items** (bottles, ID cards, umbrellas, chargers, etc.) around campus — and finding them back is pure luck.  
 There’s no central system to report or check lost items, and asking around or posting on random WhatsApp groups is chaotic.
 
