@@ -25,8 +25,8 @@ A simple campus app screen where students can **report lost/found items**, uploa
 - Each card shows:  
   - 📸 Item photo  
   - Title: “Black Bottle with Red Cap”  
-  - Location: “Found near LTC”  
-  - Time: “2 hours ago”  
+  - Location: “Found near LT3”  
+  - Time: “11:15am”  
   - Button: “Contact Finder”  
 
 **Bottom Buttons:**  
